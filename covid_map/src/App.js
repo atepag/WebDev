@@ -1,3 +1,5 @@
+//Icon author: Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+
 import React, { useState, useEffect } from "react";
 import {
   GoogleMap,
@@ -6,7 +8,7 @@ import {
   InfoWindow,
   Marker,
 } from "react-google-maps";
-
+import mapStyle from "./mapStyle.js";
 
 function Map() {
   const [selectedCity, setSelectedCity] = useState({
@@ -48,7 +50,11 @@ function Map() {
       );
   }, [setCCases]);
   return (
-    <GoogleMap defaultZoom={4} defaultCenter={{ lat: 37.0902, lng: -95.7129 }}>
+    <GoogleMap
+      defaultZoom={4}
+      defaultCenter={{ lat: 37.0902, lng: -95.7129 }}
+      defaultOptions={{ styles: mapStyle }}
+    >
       {ccases &&
         ccases.features.map((place) => (
           <Marker
@@ -68,6 +74,13 @@ function Map() {
                 place.properties.Deaths
               )
             }
+            icon={{
+              url: "/coronavirus.svg",
+              scaledSize: new window.google.maps.Size(
+                Math.log(place.properties.Confirmed) * 5,
+                Math.log(place.properties.Confirmed) * 5
+              ),
+            }}
           />
         ))}
       {selectedCity.lat != null && selectedCity.lng != null && (
