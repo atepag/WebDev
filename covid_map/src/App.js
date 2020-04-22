@@ -1,42 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   GoogleMap,
   withScriptjs,
   withGoogleMap,
-  Marker,
+  InfoWindow,
 } from "react-google-maps";
+import Markers from "./components/Markers.js";
 
-async function getData() {
-  return fetch(
-    "https://opendata.arcgis.com/datasets/bbb2e4f589ba40d692fab712ae37b9ac_1.geojson"
-  )
-    .then((response) => response.json())
-    .then((jsonData) => {
-      // jsonData is parsed json object received from url
-      return jsonData;
-    })
-    .catch((error) => {
-      // handle your errors here
-      console.error(error);
-    });
-}
-
-async function Map() {
-  var data = await getData().then(function (result) {
-    return result;
-  });
-  console.log(data);
+function Map() {
+  const [selectedCity, setSelectedCity] = useState(null);
   return (
     <GoogleMap defaultZoom={3} defaultCenter={{ lat: 0, lng: 0 }}>
-      {data.features.map((cases) => (
-        <Marker
-          key={cases.properties.OBJECTID}
-          position={{
-            lat: cases.properties.Lat,
-            lng: cases.properties.Long_,
-          }}
-        />
-      ))}
+      <Markers />;
     </GoogleMap>
   );
 }
