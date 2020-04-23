@@ -9,9 +9,6 @@ import {
   Marker,
 } from "react-google-maps";
 import mapStyle from "./mapStyle.js";
-const {
-  SearchBox,
-} = require("react-google-maps/lib/components/places/SearchBox");
 //Could not get clusters to work due to the data inconsistency
 //const {MarkerClusterer} = require("react-google-maps/lib/components/addons/MarkerClusterer");
 
@@ -51,6 +48,7 @@ function Map() {
       .then((response) => response.json())
       .then(
         (responseJson) => setCCases(responseJson)
+
         // jsonData is parsed json object received from url
       );
   }, [setCCases]);
@@ -60,27 +58,6 @@ function Map() {
       defaultCenter={{ lat: 37.0902, lng: -95.7129 }}
       defaultOptions={{ styles: mapStyle }}
     >
-      {
-        <SearchBox position>
-          <input
-            type="text"
-            placeholder="Customized your placeholder"
-            style={{
-              boxSizing: `border-box`,
-              border: `1px solid transparent`,
-              width: `240px`,
-              height: `32px`,
-              marginTop: `27px`,
-              padding: `0 12px`,
-              borderRadius: `3px`,
-              boxShadow: `0 2px 6px rgba(0, 0, 0, 0.3)`,
-              fontSize: `14px`,
-              outline: `none`,
-              textOverflow: `ellipses`,
-            }}
-          />
-        </SearchBox>
-      }
       {ccases &&
         ccases.features.map((place) => (
           <Marker
