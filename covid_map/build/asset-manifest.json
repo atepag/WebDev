@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/atepaleaguilar/covid/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/atepaleaguilar/covid/static/js/main.51dae669.chunk.js",
+    "main.js.map": "/atepaleaguilar/covid/static/js/main.51dae669.chunk.js.map",
+    "runtime-main.js": "/atepaleaguilar/covid/static/js/runtime-main.1f56bf71.js",
+    "runtime-main.js.map": "/atepaleaguilar/covid/static/js/runtime-main.1f56bf71.js.map",
+    "static/js/2.633ed755.chunk.js": "/atepaleaguilar/covid/static/js/2.633ed755.chunk.js",
+    "static/js/2.633ed755.chunk.js.map": "/atepaleaguilar/covid/static/js/2.633ed755.chunk.js.map",
+    "index.html": "/atepaleaguilar/covid/index.html",
+    "precache-manifest.f82b817b4168d767c186f4e9fc19093e.js": "/atepaleaguilar/covid/precache-manifest.f82b817b4168d767c186f4e9fc19093e.js",
+    "service-worker.js": "/atepaleaguilar/covid/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/atepaleaguilar/covid/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.633ed755.chunk.js.LICENSE.txt": "/atepaleaguilar/covid/static/js/2.633ed755.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1f56bf71.js",
+    "static/js/2.633ed755.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.51dae669.chunk.js"
+  ]
+}

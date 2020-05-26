@@ -39,8 +39,7 @@ function Map() {
     }
   }
   const [ccases, setCCases] = useState(null);
-  //var obtain = false;
-  //const [data, setData] = useState({ cases: null });
+
   useEffect(() => {
     fetch(
       "https://opendata.arcgis.com/datasets/bbb2e4f589ba40d692fab712ae37b9ac_1.geojson"
