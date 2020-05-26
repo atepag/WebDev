@@ -1,0 +1,6 @@
+Used bootstrap library to split screen in two halves at the home scree.
+Animations were used creating Keyframes and media.
+The entire website was creating using html and css objects found on w3schools. 
+Fixing the position of the objects was hard as to I had not played with them before,
+I did my best to make it relative to the window size, yet I could not figure out, how to change
+dimensions when a smaller screen is being used. 

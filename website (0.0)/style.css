@@ -1,0 +1,25 @@
+.main {
+    background: lightblue;
+    text-align: center;
+}
+
+.questionCard {
+    height: 200px;
+    background: lightcoral;
+
+}
+
+.questionHeader {
+    background: black;
+    color: white;
+    font-size: 25px;
+}
+
+#quizTitle {
+    color: yellow;
+    transition: all 2s;
+}
+
+#quizTitle:hover {
+    font-size: 50px;
+}

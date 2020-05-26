@@ -1,0 +1,92 @@
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    
+}
+.secondary-container{
+    background-color: darkcyan;
+}
+.helper{
+    margin: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 2%;
+    background-color: darkcyan;
+}
+#arrow{
+    width: 2vmin;
+    height:2vmin;
+}
+.helper #moves{
+    margin-right: 10%;
+    margin-left: 2%;
+}
+.helper button {
+    margin-right: 10%;
+}
+#loading-image{
+    position: absolute;
+    width:500px; height:500px; 
+    text-align:center;
+    margin: auto;
+    margin-left: 30%;
+    
+}
+.main-container{
+    
+    width:600px; height:600px; 
+    text-align:center;
+    margin: auto;
+}
+.main-container div{
+    width:196px; 
+    height:196px; 
+    float:left; 
+    background-color:rgba(102, 0, 0, 0.406);
+    font-size:18px; 
+}
+.tiles:hover > .overlay {
+    opacity:0.80;
+    border-radius:30px;
+}
+
+.tiles{
+    border:2px solid rgba(102, 0, 0, 0);
+    width: 194px;
+    height: 194px;
+    overflow: hidden;
+}
+.tiles #one {
+    
+    margin: 0 -402px -402px 0;
+}
+.tiles #two {
+    
+    margin: 0 -201px -402px -201px;
+}
+.tiles #three {
+    
+    margin: 0 0 -402px -402px;
+}
+.tiles #four {
+    
+    margin: -201px -402px -201px 0;
+}
+.tiles #five {
+    
+    margin: -201px -201px -201px -201px;
+}
+.tiles #six {
+    
+    margin: -201px 0 -201px -402px;
+}
+.tiles #seven {
+    
+    margin: -402px -402px 0 0;
+}
+.tiles #eight {
+    
+    margin: -402px -201px 0 -201px;
+}

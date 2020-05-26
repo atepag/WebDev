@@ -1,0 +1,299 @@
+
+form{
+	font-family: "Comic Sans MS";
+	color: white;
+}
+
+table{
+	width: 100%;
+	text-align:center;
+	margin-top: 5vmin;
+}
+
+td{padding-top: 1vmin;}
+
+body{
+	animation-name: mybg;
+  	animation-duration: 2s;
+  	animation-iteration-count: 3;
+  	animation-delay: 3s;
+	background: url("../pictures/background.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+	text-align: center;
+}
+
+p{font-size: 1.5em;}
+
+@font-face {
+    font-family: Nebula-Regular;
+    src: url('../documents/Nebula-Regular.otf');
+}
+
+
+
+dt{
+	font-weight: bold;
+	font-size: 3.5vmin;
+	font-family: "Nebula-Regular";
+	display: list-item;
+}
+
+dd{
+	font-size: 2.5vmin;
+	display: list-item;
+}
+
+a{
+	text-decoration: none;
+color: white;
+size: 0vmin;}
+
+pre{
+	font-family: "Nebula-Regular";
+	font-size: 2.5em;
+	text-align: left;
+	padding-left: 150px
+}
+
+#hint{
+	height: 120px;
+	color: black;
+	font-size: 1em;
+	font-weight: bold;
+	background-color: rgba(255,255,255, 0.80);
+	border-radius: 10px;
+	position: relative;
+}
+.input{
+	color: black;
+	font-size: 1em;
+	font-weight: bold;
+	background-color: rgba(255,255,255, 0.80);
+	border-radius: 10px;
+	position: relative;
+}
+
+#yo{
+	font-family: "Nebula-Regular";
+	font-size: 10vmin; 
+	color: white; 
+	text-align: left;
+	margin-left: 8%;
+	margin-top: 10%;
+}
+#bio{text-align: center;
+font-size: 3vmin;}
+#Contact{
+	background-color:rgba(12, 55, 66, 0.85);
+	animation: mymove 6s infinite;
+	padding: 5vmin;
+	margin-right: 8vmin;
+	margin-left: 8vmin;
+	margin-bottom: 5vmin;
+	margin-top: 5vmin;
+	border-radius: 2%;
+	color: white;
+}
+#Email{
+	background-color:rgba(12, 55, 66, 0.85);
+	animation: mymove 6s infinite;
+	padding: 20px;
+	margin-right: 10cm;
+	margin-left: 10cm;
+	border-radius: 20px;
+	position: relative;
+}
+.Links{
+	font-family: "Times New Roman"; 
+	color: white;
+	font-size: 3vmin;
+	text-align: center;
+}
+#Me{
+	display: block;
+	margin-left: auto;
+  	margin-right: auto;
+  	margin-top: 2%;
+  	margin-bottom: 5%;
+  	border: .25em solid white; 
+	border-radius: 100%;
+	
+}
+#message{
+	line-height: 10em;
+	width: 75%;
+}
+
+#back{
+	-webkit-transform: scaleX(-1);
+  	transform: scaleX(-1);
+  	text-decoration: none;
+	margin-right: 30px;
+}
+#head{
+	font-family: "Nebula-Regular";
+	font-size: 7vmin; 
+	color: white; 
+	text-align: center;
+	margin-right: 55px;
+
+}
+.pages{
+	color: white;
+	font-family: "Nebula-Regular";
+	font-size: 3.5vmin;
+	text-align: center;
+	margin-left: 0;
+}
+.leftside, .rightside{
+	height: 100vh;
+	width: 100%;
+}
+
+
+
+@media only screen and (max-width: 850px){
+	.leftside, .rightside{
+		height: 100%;
+		width: 100%;
+	} 
+	.grid-container{
+		height: 100vmax;
+  		width: 100vmax;
+	}
+	
+	#Contact{
+		height: 100%;
+	}
+	
+}
+@media only screen and (max-width: 850px){
+	#Me{
+		height: 60%;
+		width: 60%;
+	}
+	
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 60% auto auto auto auto;
+  grid-template-rows: 10% 90%;
+  grid-gap: 0%;
+  height: 100vmin;
+  width: 100vmin;
+}
+#pj {
+	grid-template-columns: 60vmin auto auto auto;
+	grid-template-rows: auto auto auto auto;
+	grid-gap: .5vmin;
+	width: auto;
+	height: auto;
+}
+
+
+.item1 {
+	position: relative;
+}
+.item2 {
+	grid-area: 1 / 2 / 1 / 6
+}
+.item3 {
+  grid-area: 2 / 1 / 3 / 5;
+  padding: 10% 10% 10% 10%;
+}
+.Description1{
+	grid-area: 1 / 1 / 2 / 4;
+}
+#Pics1{
+	grid-area: 1 / 4 / 2 / 6;
+}
+.Description2{
+	grid-area: 2 / 1 / 3 / 4;
+}
+#Pics2{
+	grid-area: 2 / 4 / 3 / 6;
+	
+}
+.Description3{
+	grid-area: 3 / 1 / 4 / 4;
+}
+#Pics3{
+	grid-area: 3 / 4 / 4 / 6;
+	padding-left: 20px;
+}
+.Description4{
+	grid-area: 4 / 1 / 5 / 4;
+}
+#Pics4{
+	grid-area: 4 / 4 / 5 / 6;
+}
+#Pics1,#Pics2,#Pics3,#Pics4{
+	padding-top: 5px;
+	padding-right: 20px;
+}
+.Description1, .Description2, .Description3, .Description4{
+	padding-left: 40px;
+	padding-right: 100px;
+
+}
+.pj_img{
+	width: 15vmin;
+	height: 10vmin;
+}
+
+#certificates{
+	grid-template-columns: auto auto;
+  	grid-template-rows: auto auto;
+  	grid-gap: 20px;
+  	padding: 10px;
+}
+
+#projects_div{
+	background-color:rgba(12, 55, 66, 0.85);
+	animation: mymove 6s infinite;
+	padding: 20px;
+	margin-right: 20vmin;
+	margin-left: 20vmin;
+	border-radius: 20px;
+	text-align: left;
+}
+#emoji{
+	font-size: 3em;
+	padding-top: 10px;
+	padding-left: 3cm;
+	text-align: left;
+}
+
+@keyframes mymove {
+  0% {background-color: rgba(46, 0, 21, 0.85);}
+  50% {background-color: rgba(24, 30, 43, 0.85);}
+  100%{background-color: rgba(46, 0, 21, 0.85);}
+}
+
+@keyframes mybg {
+  0% {background-image: linear-gradient(rgb(1, 10, 28),rgb(8, 1, 0));}
+  5% {background-image: linear-gradient(rgb(1, 15, 28),rgb(8, 1, 0));}
+  9% {background-image: linear-gradient(rgb(1, 16, 28),rgb(8, 1, 0));}
+  14% {background-image: linear-gradient(rgb(1, 20, 28),rgb(8, 1, 0));}
+  20% {background-image: linear-gradient(rgb(1, 23, 28),rgb(8, 1, 0));}
+  23% {background-image: linear-gradient(rgb(1, 25, 0),rgb(8, 1, 0));}
+  30% {background-image: linear-gradient(rgb(1, 28, 0),rgb(8, 1, 0));}
+  35% {background-image: linear-gradient(rgb(1, 28, 0),rgb(8, 1, 0));}
+  40% {background-image: linear-gradient(rgb(3, 28, 0),rgb(8, 1, 0));}
+  45% {background-image: linear-gradient(rgb(10, 28, 0),rgb(8, 1, 0));}
+  50% {background-image: linear-gradient(rgb(13, 28, 0),rgb(8, 1, 0));}
+  55% {background-image: linear-gradient(rgb(16, 28, 0),rgb(8, 1, 0));}
+  63% {background-image: linear-gradient(rgb(23, 28, 0),rgb(8, 1, 0));}
+  67% {background-image: linear-gradient(rgb(25, 28, 0),rgb(8, 1, 0));}
+  71% {background-image: linear-gradient(rgb(28, 28, 0),rgb(8, 1, 0));}
+  75% {background-image: linear-gradient(rgb(28, 25, 0),rgb(8, 1, 0));}
+  80% {background-image: linear-gradient(rgb(28, 23, 0),rgb(8, 1, 0));}
+  85% {background-image: linear-gradient(rgb(28, 16, 0),rgb(8, 1, 0));}
+  90% {background-image: linear-gradient(rgb(28, 13, 0),rgb(8, 1, 0));}
+  94% {background-image: linear-gradient(rgb(28, 10, 0),rgb(8, 1, 0));}
+  97% {background-image: linear-gradient(rgb(28, 8, 0),rgb(8, 1, 0));}
+  100% {background-image: linear-gradient(rgb(28, 5, 0),rgb(8, 1, 0));}
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html >
+<html lang= "en">
+    <head>
+        <meta charset='utf-8'>
+        <title>Image Puzzle</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="puzzle.js" async></script>
+        <script type="text/javascript" src="events.js" async></script>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    
+    <body>
+        
+        <div class="secondary-container">
+            <h1>CAN YOU SOLVE THE PUZZLE?</h1>
+            <img alt="" id="loading-image" src="https://cdn.lowgif.com/small/8a0dcc4f28ac8fc9-transparent-animated-gif-loading-gif.gif">
+            <div class="main-container" style="background-image: url('https://picsum.photos/600/600')"  >  
+                <div id="1" class="tiles"><img alt="" class="overlay" id="one" src="https://picsum.photos/600/600"></div>
+                <div id="2" class="tiles"><img alt="" class="overlay" id="two" src="https://picsum.photos/600/600"></div>
+                <div id="3" class="tiles"><img alt="" class="overlay" id="three" src="https://picsum.photos/600/600"></div>
+                <div id="4" class="tiles"><img alt="" class="overlay" id="four" src="https://picsum.photos/600/600"></div>
+                <div id="5" class="tiles"><img alt="" class="overlay" id="five" src="https://picsum.photos/600/600"></div>
+                <div id="6" class="tiles"><img alt="" class="overlay" id="six" src="https://picsum.photos/600/600"></div>
+                <div id="7" class="tiles"><img alt="" class="overlay" id="seven" src="https://picsum.photos/600/600"></div>
+                <div id="8" class="tiles"><img alt="" class="overlay" id="eight" src="https://picsum.photos/600/600"></div>
+                <div id="9" class="tiles"><img alt="" id="nine" src="null"></div>
+            </div>
+        </div>
+        <div class="helper">
+            <p class="badge badge-primary text-wrap" style="width: 10rem; font-size: 2rem;">Moves: <p class="badge badge-primary text-wrap" style="width: 3rem; font-size: 2rem;" id="moves">0</p>
+            <button type="button" class="btn btn-outline-dark" id="start">START</button>
+            <button type="button" class="btn btn-outline-danger" id="shuffle"><img alt="" src="arrow.png" id="arrow"> PIC</button>
+            <button type="button" class="btn btn-outline-warning" id="preview">PEEK</button>
+            
+        </div>
+    </body>
+    
+</html>
+
+
